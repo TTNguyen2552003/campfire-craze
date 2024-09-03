@@ -1,0 +1,38 @@
+@import url(./variables/effect.css);
+@import url(./variables/gap.css);
+@import url(./variables/icon.css);
+@import url(./variables/shape.css);
+@import url(./variables/stroke.css);
+@import url(./variables/theme.css);
+@import url(./variables/typography.css);
+
+@import url(./platforms/desktop.css);
+@import url(./platforms/tablet.css);
+@import url(./platforms/mobile.css);
+
+@import url(./animation.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    position: relative;
+    transition: 300ms ease-out;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
