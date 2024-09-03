@@ -1,0 +1,21 @@
+:root {
+    --effect-box-shadow-1: 0 1px 2px 0 var(--theme-shadow-box-shadow-1);
+    --effect-box-shadow-2: 0 2px 4px 0 var(--theme-shadow-box-shadow-2);
+    --effect-box-shadow-3: 0 3px 6px 0 var(--theme-shadow-box-shadow-3);
+    --effect-box-shadow-4: 0 4px 8px 0 var(--theme-shadow-box-shadow-4);
+    --effect-box-shadow-5: 0 5px 10px 0 var(--theme-shadow-box-shadow-5);
+
+    --effect-inset-shadow: 2px 2px 4px 0 var(--theme-shadow-inset-shadow-top-left) inset,
+        -1px -1px 1.5px 0 var(--theme-shadow-inset-shadow-bottom-right) inset;
+
+    --effect-background-blur-1: blur(10px);
+    --effect-background-blur-2: blur(20px);
+    --effect-background-blur-3: blur(50px);
+    --effect-background-blur-4: blur(100px);
+    --effect-background-blur-5: blur(200px);
+
+    --effect-blur-1: blur(10px);
+    --effect-blur-2: blur(20px);
+    --effect-blur-3: blur(25px);
+    --effect-blur-4: blur(50px);
+}

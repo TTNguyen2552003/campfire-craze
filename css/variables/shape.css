@@ -1,0 +1,8 @@
+:root {
+    --shape-extra-small: 4px;
+    --shape-small: 8px;
+    --shape-medium: 12px;
+    --shape-large: 16px;
+    --shape-extra-large: 28px;
+    --shape-full: 1000px;
+}

@@ -1,0 +1,28 @@
+:root {
+    --theme-glass-fill-1: rgba(0, 0, 0, 0.1);
+    --theme-glass-fill-2: rgba(0, 0, 0, 0.2);
+    --theme-glass-fill-3: rgba(128, 128, 128, 0.1);
+    --theme-glass-fill-4: rgba(128, 128, 128, 0.2);
+    --theme-glass-fill-5: rgba(255, 255, 255, 0.1);
+    --theme-glass-fill-6: rgba(255, 255, 255, 0.2);
+
+    --theme-glass-stroke-1: rgba(255, 255, 255, 0.3);
+
+    --theme-glass-place-holder: rgba(255, 255, 255, 0.5);
+
+    --theme-material-3-primary-fixed: rgba(188, 240, 180, 1);
+    --theme-material-3-dark-surface-container-high: rgba(37, 43, 44, 1);
+    --theme-material-3-dark-surface: rgba(14, 20, 21, 1);
+
+    --theme-shadow-inset-shadow-top-left: rgba(0, 0, 0, 0.2);
+    --theme-shadow-inset-shadow-bottom-right: rgba(255, 255, 255, 0.3);
+
+    --theme-shadow-box-shadow-1: rgba(0, 0, 0, 0.15);
+    --theme-shadow-box-shadow-2: rgba(0, 0, 0, 0.2);
+    --theme-shadow-box-shadow-3: rgba(0, 0, 0, 0.2);
+    --theme-shadow-box-shadow-4: rgba(0, 0, 0, 0.3);
+    --theme-shadow-box-shadow-5: rgba(0, 0, 0, 0.35);
+
+    --theme-gradient-pair-1-first: rgba(76, 175, 80, 1);
+    --theme-gradient-pair-1-second: rgba(3, 169, 244, 1);
+}

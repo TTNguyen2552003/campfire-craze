@@ -1,0 +1,48 @@
+@import url(./typography-primitive.css);
+
+:root {
+    --typography-desktop-title-hero: var(--font-weight-3) var(--type-scale-desktop-scale-up-5) /
+        var(--line-height-desktop) var(--font-family-primary);
+    --typography-desktop-title-page: var(--font-weight-3) var(--type-scale-desktop-scale-up-4) /
+        var(--line-height-desktop) var(--font-family-primary);
+    --typography-desktop-subtitle: var(--font-weight-1) var(--type-scale-desktop-scale-up-3) /
+        var(--line-height-desktop) var(--font-family-primary);
+    --typography-desktop-heading: var(--font-weight-2) var(--type-scale-desktop-scale-up-2) / var(--line-height-desktop)
+        var(--font-family-primary);
+    --typography-desktop-subheading: var(--font-weight-1) var(--type-scale-desktop-scale-up-1) /
+        var(--line-height-desktop) var(--font-family-primary);
+    --typography-desktop-body: var(--font-weight-1) var(--type-scale-desktop-root-size) / var(--line-height-desktop)
+        var(--font-family-secondary);
+    --typography-desktop-supporting-text: var(--font-weight-1) var(--type-scale-desktop-scale-down-1) /
+        var(--line-height-desktop) var(--font-family-secondary);
+
+    --typography-tablet-title-hero: var(--font-weight-3) var(--type-scale-tablet-scale-up-5) / var(--line-height-tablet)
+        var(--font-family-primary);
+    --typography-tablet-title-page: var(--font-weight-3) var(--type-scale-tablet-scale-up-4) / var(--line-height-tablet)
+        var(--font-family-primary);
+    --typography-tablet-subtitle: var(--font-weight-1) var(--type-scale-tablet-scale-up-3) / var(--line-height-tablet)
+        var(--font-family-primary);
+    --typography-tablet-heading: var(--font-weight-2) var(--type-scale-tablet-scale-up-2) / var(--line-height-tablet)
+        var(--font-family-primary);
+    --typography-tablet-subheading: var(--font-weight-1) var(--type-scale-tablet-scale-up-1) / var(--line-height-tablet)
+        var(--font-family-primary);
+    --typography-tablet-body: var(--font-weight-1) var(--type-scale-tablet-root-size) / var(--line-height-tablet)
+        var(--font-family-secondary);
+    --typography-tablet-supporting-text: var(--font-weight-1) var(--type-scale-tablet-scale-down-1) /
+        var(--line-height-tablet) var(--font-family-secondary);
+
+    --typography-mobile-title-hero: var(--font-weight-3) var(--type-scale-mobile-scale-up-5) / var(--line-height-mobile)
+        var(--font-family-primary);
+    --typography-mobile-title-page: var(--font-weight-3) var(--type-scale-mobile-scale-up-4) / var(--line-height-mobile)
+        var(--font-family-primary);
+    --typography-mobile-subtitle: var(--font-weight-1) var(--type-scale-mobile-scale-up-3) / var(--line-height-mobile)
+        var(--font-family-primary);
+    --typography-mobile-heading: var(--font-weight-2) var(--type-scale-mobile-scale-up-2) / var(--line-height-mobile)
+        var(--font-family-primary);
+    --typography-mobile-subheading: var(--font-weight-1) var(--type-scale-mobile-scale-up-1) / var(--line-height-mobile)
+        var(--font-family-primary);
+    --typography-mobile-body: var(--font-weight-1) var(--type-scale-mobile-root-size) / var(--line-height-mobile)
+        var(--font-family-secondary);
+    --typography-mobile-supporting-text: var(--font-weight-1) var(--type-scale-mobile-scale-down-1) /
+        var(--line-height-mobile) var(--font-family-secondary);
+}
