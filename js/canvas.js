@@ -17,7 +17,7 @@ window.addEventListener("resize", () => {
     canvas.height = canvas.parentElement.clientHeight
 
     ctx = canvas.getContext("2d")
-    
+
     Init()
 })
 
