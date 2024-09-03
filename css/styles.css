@@ -22,6 +22,7 @@ html {
     ::-webkit-scrollbar {
         display: none;
     }
+    overflow-x: hidden;
 }
 
 body {
