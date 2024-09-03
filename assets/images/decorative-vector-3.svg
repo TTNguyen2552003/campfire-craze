@@ -1,0 +1,26 @@
+<svg width="740" height="740" viewBox="0 0 740 740" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#a)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M591.484 528.316c-36.267 52.134-69.421 108.491-122.034 135.169-55.333 28.057-117.749 34.677-175.851 15.874-59.181-19.151-106.541-66.782-147.497-120.514-44.396-58.246-97.301-120.868-96.081-199.05 1.211-77.637 55.812-137.621 102.198-192.923 39.753-47.393 88.384-80.21 142.698-99.04 52.215-18.103 107.742-26.357 159.25-5.645 50.489 20.303 82.51 72.896 119.735 117.83 43.66 52.703 112.234 93.23 115.94 166.654 3.707 73.439-58.736 124.687-98.358 181.645"
+            fill="url(#b)" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M591.484 528.316c-36.267 52.134-69.421 108.491-122.034 135.169-55.333 28.057-117.749 34.677-175.851 15.874-59.181-19.151-106.541-66.782-147.497-120.514-44.396-58.246-97.301-120.868-96.081-199.05 1.211-77.637 55.812-137.621 102.198-192.923 39.753-47.393 88.384-80.21 142.698-99.04 52.215-18.103 107.742-26.357 159.25-5.645 50.489 20.303 82.51 72.896 119.735 117.83 43.66 52.703 112.234 93.23 115.94 166.654 3.707 73.439-58.736 124.687-98.358 181.645"
+        fill="url(#c)" />
+    <defs>
+        <linearGradient id="b" x1="690.259" y1="689.818" x2="-33.825" y2="165.838" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4CAF50" />
+            <stop offset="1" stop-color="#03A9F4" />
+        </linearGradient>
+        <linearGradient id="c" x1="690.259" y1="689.818" x2="-33.825" y2="165.838" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4CAF50" />
+            <stop offset="1" stop-color="#03A9F4" />
+        </linearGradient>
+        <filter id="a" x="0" y="0" width="740" height="740" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_851_2592" />
+        </filter>
+    </defs>
+</svg>

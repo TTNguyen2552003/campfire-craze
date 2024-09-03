@@ -1,0 +1,29 @@
+<svg width="172" height="160" viewBox="0 0 172 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#a)">
+        <circle cx="116" cy="64" r="36" fill="url(#b)" />
+    </g>
+    <circle cx="116" cy="64" r="36" fill="url(#c)" />
+    <path
+        d="M122 80c0-23.196-18.804-42-42-42-18.324 0-33.906 11.734-39.644 28.098A28 28 0 0 0 38 66c-15.464 0-28 12.536-28 28s12.536 28 28 28h91c11.598 0 21-9.402 21-21s-9.402-21-21-21z"
+        fill="url(#d)" />
+    <defs>
+        <linearGradient id="b" x1="116" y1="28" x2="116" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFF57B" />
+            <stop offset="1" stop-color="#FA8607" />
+        </linearGradient>
+        <linearGradient id="c" x1="116" y1="28" x2="116" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFF57B" />
+            <stop offset="1" stop-color="#FA8607" />
+        </linearGradient>
+        <linearGradient id="d" x1="150" y1="38" x2="15.179" y2="129.621" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff" stop-opacity=".9" />
+            <stop offset="1" stop-color="#fff" stop-opacity=".7" />
+        </linearGradient>
+        <filter id="a" x="60" y="8" width="112" height="112" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_556_2741" />
+        </filter>
+    </defs>
+</svg>

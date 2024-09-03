@@ -1,0 +1,26 @@
+<svg width="740" height="740" viewBox="0 0 740 740" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#a)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M676.438 335.445c8.069-63.579 28.234-132.631-4.529-187.537-33.479-56.106-100.644-84.15-164.5-95.732-58.705-10.648-113.186 20.485-171.107 34.859-64.048 15.895-135.713 10.051-185.559 53.655-55.925 48.921-90.802 120.444-98.416 194.755-8.12 79.254 3.783 166.019 55.264 226.408 50.085 58.751 134.922 62.836 208.922 83.49 70.101 19.566 144.94 65.821 210.249 33.505 65.034-32.18 72.427-120.883 101.598-187.811 22.218-50.975 41.067-100.351 48.078-155.592"
+            fill="url(#b)" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M676.438 335.445c8.069-63.579 28.234-132.631-4.529-187.537-33.479-56.106-100.644-84.15-164.5-95.732-58.705-10.648-113.186 20.485-171.107 34.859-64.048 15.895-135.713 10.051-185.559 53.655-55.925 48.921-90.802 120.444-98.416 194.755-8.12 79.254 3.783 166.019 55.264 226.408 50.085 58.751 134.922 62.836 208.922 83.49 70.101 19.566 144.94 65.821 210.249 33.505 65.034-32.18 72.427-120.883 101.598-187.811 22.218-50.975 41.067-100.351 48.078-155.592"
+        fill="url(#c)" />
+    <defs>
+        <linearGradient id="b" x1="370" y1="50" x2="370" y2="690" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4CAF50" />
+            <stop offset="1" stop-color="#03A9F4" />
+        </linearGradient>
+        <linearGradient id="c" x1="370" y1="50" x2="370" y2="690" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4CAF50" />
+            <stop offset="1" stop-color="#03A9F4" />
+        </linearGradient>
+        <filter id="a" x="0" y="0" width="740" height="740" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_851_2586" />
+        </filter>
+    </defs>
+</svg>

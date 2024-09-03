@@ -1,0 +1,33 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#a)">
+        <path
+            d="M99.924 67.023c.643-3.434-2.897-5.858-6.315-5.25-17.645 3.132-34.452-8.622-37.54-26.255a32.3 32.3 0 0 1 .174-12.137c.381-1.847-1.04-3.67-2.884-3.343-21.923 3.893-36.585 24.808-32.75 46.715 3.837 21.908 24.719 36.511 46.641 32.619 17.022-3.022 29.666-16.306 32.674-32.349"
+            fill="url(#b)" />
+    </g>
+    <path
+        d="M99.924 67.023c.643-3.434-2.897-5.858-6.315-5.25-17.645 3.132-34.452-8.622-37.54-26.255a32.3 32.3 0 0 1 .174-12.137c.381-1.847-1.04-3.67-2.884-3.343-21.923 3.893-36.585 24.808-32.75 46.715 3.837 21.908 24.719 36.511 46.641 32.619 17.022-3.022 29.666-16.306 32.674-32.349"
+        fill="url(#c)" />
+    <path
+        d="M122 80c0-23.196-18.804-42-42-42-18.324 0-33.906 11.734-39.644 28.098A28 28 0 0 0 38 66c-15.464 0-28 12.536-28 28s12.536 28 28 28h91c11.598 0 21-9.402 21-21s-9.402-21-21-21z"
+        fill="url(#d)" />
+    <defs>
+        <linearGradient id="b" x1="53.056" y1="20.092" x2="67.136" y2="99.392" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFF57B" />
+            <stop offset="1" stop-color="#FECC51" />
+        </linearGradient>
+        <linearGradient id="c" x1="53.056" y1="20.092" x2="67.136" y2="99.392" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFF57B" />
+            <stop offset="1" stop-color="#FECC51" />
+        </linearGradient>
+        <linearGradient id="d" x1="10" y1="38" x2="154.27" y2="113.545" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff" stop-opacity=".9" />
+            <stop offset="1" stop-color="#fff" stop-opacity=".7" />
+        </linearGradient>
+        <filter id="a" x="10" y="10" width="100" height="100" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_556_3317" />
+        </filter>
+    </defs>
+</svg>
