@@ -1,0 +1,155 @@
+@keyframes entrance-stretch {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes entrance-fly-in-up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes entrance-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes entrance-float-in-up {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes entrance-float-in-left {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes entrance-fly-in-left-and-half-turn {
+    0% {
+        transform: translateX(-50%) rotate(180deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes entrance-float-in-right {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrance-float-in-right-and-bounce {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-10%);
+    }
+
+    80% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes entrance-fly-in-right-and-bounce {
+    0% {
+        transform: translateX(50%) rotate(90deg);
+    }
+
+    50% {
+        transform: translateX(-5%) rotate(45deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes entrance-fly-in-left-and-bounce {
+    0% {
+        transform: translateX(-50%) rotate(-90deg);
+    }
+
+    80% {
+        transform: translateX(5%) rotate(-45deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes emphasis-bounce-down {
+    50% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes emphasis-bounce-left-and-half-turn {
+    50% {
+        transform: translate(-5%) rotate(90deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes emphasis-bounce-right-and-half-turn {
+    50% {
+        transform: translate(5%) rotate(90deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes exit-fly-out-to-top {
+    100% {
+        transform: translateY(-100%);
+    }
+}
