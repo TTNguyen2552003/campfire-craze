@@ -1,5 +1,4 @@
 let loadingAnimationInstance = null
-
 class LoadingAnimation {
     constructor() {
         this.loadingFrame = null

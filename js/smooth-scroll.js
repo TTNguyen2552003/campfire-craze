@@ -1,5 +1,4 @@
 let smoothScrollInstance = null
-
 class SmoothScroll {
     static BASE_SCROLL_AMOUNT_PER_TIME = 100
     static BASE_SCROLL_DURATION = 300
