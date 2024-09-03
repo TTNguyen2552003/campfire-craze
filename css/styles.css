@@ -26,7 +26,20 @@ html {
 
 body {
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-material-3-dark-surface);
     transition: 300ms ease-out;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
