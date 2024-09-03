@@ -104,7 +104,7 @@
             color: white;
             cursor: pointer;
 
-            &:hover+.dropdown-menu__icon {
+            &:hover + .dropdown-menu__icon {
                 transform: rotate(-180deg);
             }
 
@@ -158,11 +158,11 @@
             cursor: pointer;
         }
 
-        .check-box__data-field:checked~.check-box__icon--checked {
+        .check-box__data-field:checked ~ .check-box__icon--checked {
             visibility: visible;
         }
 
-        .check-box__data-field:checked~.check-box__icon--unchecked {
+        .check-box__data-field:checked ~ .check-box__icon--unchecked {
             visibility: hidden;
         }
 
@@ -460,9 +460,11 @@
                 width: 100%;
                 height: calc(100% - var(--gap-positive-400));
                 border-radius: var(--shape-extra-small);
-                background-image: linear-gradient(to right,
-                        var(--theme-gradient-pair-1-first),
-                        var(--theme-gradient-pair-1-second));
+                background-image: linear-gradient(
+                    to right,
+                    var(--theme-gradient-pair-1-first),
+                    var(--theme-gradient-pair-1-second)
+                );
                 z-index: 0;
                 transition: 300ms ease-out;
             }
@@ -473,9 +475,11 @@
                 justify-content: center;
                 padding: var(--gap-positive-400) var(--gap-positive-1200);
                 border-radius: var(--shape-extra-small);
-                background-image: linear-gradient(to right,
-                        var(--theme-gradient-pair-1-first),
-                        var(--theme-gradient-pair-1-second));
+                background-image: linear-gradient(
+                    to right,
+                    var(--theme-gradient-pair-1-first),
+                    var(--theme-gradient-pair-1-second)
+                );
                 box-shadow: var(--effect-box-shadow-2);
                 font: var(--typography-mobile-heading);
                 color: white;
@@ -1076,9 +1080,11 @@
             width: 240px;
             height: 240px;
             border-radius: var(--shape-full);
-            background-image: linear-gradient(to bottom,
-                    var(--theme-gradient-pair-1-first),
-                    var(--theme-gradient-pair-1-second));
+            background-image: linear-gradient(
+                to bottom,
+                var(--theme-gradient-pair-1-first),
+                var(--theme-gradient-pair-1-second)
+            );
         }
 
         .contact-section__methods {
