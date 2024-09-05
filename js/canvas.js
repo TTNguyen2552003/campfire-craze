@@ -2,8 +2,8 @@ let canvas, ctx, cw, ch
 window.addEventListener("DOMContentLoaded", () => {
     canvas = document.querySelector("canvas")
 
-    canvas.width = canvas.parentElement.clientWidth
-    canvas.height = canvas.parentElement.clientHeight
+    canvas.width = canvas.parentElement.offsetWidth
+    canvas.height = canvas.parentElement.offsetHeight
 
     ctx = canvas.getContext("2d")
 
@@ -13,8 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("resize", () => {
     canvas = document.querySelector("canvas")
 
-    canvas.width = canvas.parentElement.clientWidth
-    canvas.height = canvas.parentElement.clientHeight
+    canvas.width = canvas.parentElement.offsetWidth
+    canvas.height = canvas.parentElement.offsetHeight
 
     ctx = canvas.getContext("2d")
 
