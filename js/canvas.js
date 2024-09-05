@@ -1,6 +1,6 @@
 let canvas, ctx, cw, ch
 window.addEventListener("DOMContentLoaded", () => {
-    canvas = document.querySelector(".form-container__flow-field")
+    canvas = document.querySelector("canvas")
 
     canvas.width = canvas.parentElement.clientWidth
     canvas.height = canvas.parentElement.clientHeight
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 window.addEventListener("resize", () => {
-    canvas = document.querySelector(".form-container__flow-field")
+    canvas = document.querySelector("canvas")
 
     canvas.width = canvas.parentElement.clientWidth
     canvas.height = canvas.parentElement.clientHeight

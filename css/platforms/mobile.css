@@ -557,7 +557,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: var(--gap-positive-400);
+            padding-top: var(--gap-positive-300);
             padding-bottom: 0;
             background-color: transparent;
             border: none;
@@ -568,7 +568,7 @@
 
             &:hover {
                 padding-top: 0;
-                padding-bottom: var(--gap-positive-400);
+                padding-bottom: var(--gap-positive-300);
 
                 .cta-button__glow-layer {
                     top: 0;
@@ -584,9 +584,9 @@
             .cta-button__glow-layer {
                 position: absolute;
                 left: 0;
-                top: var(--gap-positive-400);
+                top: var(--gap-positive-300);
                 width: 100%;
-                height: calc(100% - var(--gap-positive-400));
+                height: calc(100% - var(--gap-positive-300));
                 border-radius: var(--shape-extra-small);
                 background-image: linear-gradient(
                     to right,
@@ -601,7 +601,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: var(--gap-positive-400) var(--gap-positive-1200);
+                padding: var(--gap-positive-300) var(--gap-positive-1200);
                 border-radius: var(--shape-extra-small);
                 background-image: linear-gradient(
                     to right,
