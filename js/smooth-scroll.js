@@ -27,7 +27,7 @@ class SmoothScroll {
         })
         this.internalAnchors = Array.from(document.querySelectorAll("a[href^='#']")).filter((link) => {
             const targetId = link.getAttribute("href").slice(1)
-            return document.getElementById(targetId) !== null
+            return document.getElementById(targetId) !== null && link.className != "drawer-menu-item__link"
         })
         SmoothScroll.SCROLL_LIMITS.maxScrollAmount = document.querySelector("body").offsetHeight - window.innerHeight
     }
@@ -77,15 +77,13 @@ class SmoothScroll {
             })
         })
 
-        this.internalAnchors.forEach((link) => {
-            link.addEventListener("click", (event) => {
+        this.internalAnchors.forEach((anchor) => {
+            anchor.addEventListener("click", (event) => {
                 event.preventDefault()
 
-                const targetId = link.getAttribute("href").slice(1)
+                const targetId = anchor.getAttribute("href").slice(1)
                 const target = document.getElementById(targetId)
 
-                console.log(target.offsetTop)
-                console.log(this.scrollAmount)
                 this.scrollSmoothly(target.offsetTop - this.scrollAmount, this.scrollElements)
             })
         })

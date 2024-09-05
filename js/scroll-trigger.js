@@ -98,7 +98,8 @@ let activitiesScrollTrigger = null
 class ActivitiesScrollTrigger {
     constructor() {
         this.activities = []
-        this.observer = null
+        this.intersectionObserver = null
+        this.mutationObserver = null
         this.initializeAnimator()
     }
 
@@ -109,7 +110,14 @@ class ActivitiesScrollTrigger {
 
     setupElements() {
         this.activities = document.querySelectorAll(".timeline__activity")
-        this.observer = new MutationObserver((mutations) => {
+        this.intersectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    this.animateActivities()
+                }
+            })
+        })
+        this.mutationObserver = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
                 if (mutation.type === "attributes") {
                     this.animateActivities()
@@ -142,7 +150,10 @@ class ActivitiesScrollTrigger {
 
     startObserving() {
         const scrollElement = document.querySelector("[smooth-scroll]")
-        this.observer.observe(scrollElement, { attributes: true })
+        this.mutationObserver.observe(scrollElement, { attributes: true })
+
+        const activitiesContainer = document.querySelector(".schedule-section__timeline>ul")
+        this.intersectionObserver.observe(activitiesContainer)
     }
 }
 

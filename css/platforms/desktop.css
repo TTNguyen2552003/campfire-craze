@@ -19,8 +19,6 @@
             padding: var(--gap-positive-300) var(--gap-positive-400);
             border-radius: var(--shape-extra-small);
             background-color: var(--theme-glass-fill-2);
-            outline: none;
-            border: none;
             box-shadow: var(--effect-inset-shadow);
             font: var(--typography-desktop-body);
             color: white;
@@ -52,8 +50,6 @@
             padding: var(--gap-positive-300) var(--gap-positive-400);
             border-radius: var(--shape-extra-small);
             background-color: var(--theme-glass-fill-2);
-            outline: none;
-            border: none;
             box-shadow: var(--effect-inset-shadow);
             font: var(--typography-desktop-body);
             color: white;
@@ -98,8 +94,6 @@
             padding: var(--gap-positive-300) var(--gap-positive-400);
             border-radius: var(--shape-extra-small);
             background-color: var(--theme-glass-fill-2);
-            border: none;
-            outline: none;
             box-shadow: var(--effect-inset-shadow);
             font: var(--typography-desktop-subheading);
             color: white;
@@ -194,8 +188,6 @@
             padding: var(--gap-positive-300) var(--gap-positive-400);
             border-radius: var(--shape-extra-small);
             background-color: var(--theme-glass-fill-2);
-            border: none;
-            outline: none;
             box-shadow: var(--effect-inset-shadow);
             font: var(--typography-desktop-body);
             color: white;
@@ -213,11 +205,8 @@
         justify-content: center;
         padding: var(--gap-positive-300) var(--gap-positive-600);
         border-radius: var(--shape-small);
-        outline: none;
-        border: none;
         font: var(--typography-desktop-body);
         color: white;
-        cursor: pointer;
     }
 
     .action-button--main {
@@ -309,6 +298,10 @@
     }
 
     .header__burger-menu {
+        display: none;
+    }
+
+    .drawer-menu {
         display: none;
     }
 
@@ -444,10 +437,6 @@
             justify-content: center;
             padding-top: var(--gap-positive-400);
             padding-bottom: 0;
-            background-color: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
             transition: 300ms ease-out;
             animation: entrance-fly-in-up 1000ms 2250ms cubic-bezier(0, 0.4, 0.6, 1);
 
@@ -1275,7 +1264,7 @@
                 align-items: center;
             }
 
-            .social-media-network__icon-container {
+            .social-media-networks__item {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1288,13 +1277,13 @@
                     padding-bottom: var(--gap-positive-400);
                     cursor: pointer;
 
-                    .social-media-network__icon {
+                    .social-media-network__logo {
                         box-shadow: var(--effect-box-shadow-3);
                     }
                 }
             }
 
-            .social-media-network__icon {
+            .social-media-network__logo {
                 width: var(--icon-size-extra-large);
                 height: var(--icon-size-extra-large);
                 box-shadow: var(--effect-box-shadow-1);

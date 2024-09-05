@@ -185,7 +185,6 @@ class RegistrationForm {
                     alert("Register successfully")
                 })
                 .catch((error) => {
-                    console.log(error)
                     alert("Register failed")
                 })
         }

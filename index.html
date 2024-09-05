@@ -25,6 +25,7 @@
         <script src="./js/canvas.js"></script>
         <script src="./js/register-form.js"></script>
         <script src="./js/contact-form.js"></script>
+        <script src="./js/drawer-menu.js"></script>
     </head>
 
     <body>
@@ -114,6 +115,111 @@
                 />
             </button>
         </header>
+
+        <div class="drawer-menu">
+            <div class="drawer-menu__header">
+                <img
+                    src="./assets/images/logo-full.svg"
+                    alt="logo full"
+                    class="drawer-menu__logo-full"
+                />
+                <img
+                    src="./assets/images/logo-short.svg"
+                    alt="logo short"
+                    class="drawer-menu__logo-short"
+                />
+                <button
+                    class="drawer-menu__close-button"
+                    type="button"
+                >
+                    <img
+                        src="./assets/images/close-button.svg"
+                        alt="close drawer menu button"
+                    />
+                </button>
+            </div>
+            <div class="drawer-menu__divider"></div>
+            <nav class="drawer-menu__items">
+                <ul>
+                    <li class="drawer-menu__item">
+                        <a
+                            class="drawer-menu-item__link"
+                            href="#hero-section-container"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="drawer-menu__item">
+                        <a
+                            class="drawer-menu-item__link"
+                            href="#about-event-section-container"
+                            >About</a
+                        >
+                    </li>
+                    <li class="drawer-menu__item">
+                        <a
+                            class="drawer-menu-item__link"
+                            href="#schedule-section-container"
+                            >Schedule</a
+                        >
+                    </li>
+                    <li class="drawer-menu__item">
+                        <a
+                            class="drawer-menu-item__link"
+                            href="#registration-section-container"
+                            >Registration</a
+                        >
+                    </li>
+                    <li class="drawer-menu__item">
+                        <a
+                            class="drawer-menu-item__link"
+                            href="#contact-section-container"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <div class="drawer-menu__divider"></div>
+            <div class="drawer-menu__social-media-networks">
+                <ul>
+                    <li class="social-media-networks__item">
+                        <a
+                            rel="noopener"
+                            target="_blank"
+                            class="social-media-network__link"
+                            href="https://www.facebook.com/tran.trongnguyen255"
+                            ><img
+                                class="social-media-network__logo"
+                                src="./assets/images/social-media-icon/large/facebook.svg"
+                                alt="facebook logo"
+                        /></a>
+                    </li>
+                    <li class="social-media-networks__item">
+                        <a
+                            rel="noopener"
+                            target="_blank"
+                            class="social-media-network__link"
+                            href="https://github.com/TTNguyen2552003"
+                            ><img
+                                class="social-media-network__logo"
+                                src="./assets/images/social-media-icon/large/instagram.svg"
+                                alt="instagram logo"
+                        /></a>
+                    </li>
+                    <li class="social-media-networks__item">
+                        <a
+                            rel="noopener"
+                            target="_blank"
+                            class="social-media-network__link"
+                            href="https://www.linkedin.com/in/ttnguyen2552003/"
+                            ><img
+                                class="social-media-network__logo"
+                                src="./assets/images/social-media-icon/large/linkedin.svg"
+                                alt="linkedin logo"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <main smooth-scroll>
             <ul>
@@ -1451,32 +1557,40 @@
                                 </div>
                                 <div class="contact-section__social-media-networks">
                                     <ul>
-                                        <li class="social-media-network__icon-container">
-                                            <a href="https://www.facebook.com/tran.trongnguyen255"
+                                        <li class="social-media-networks__item">
+                                            <a
+                                                class="social-media-network__link"
+                                                href="https://www.facebook.com/tran.trongnguyen255"
                                                 ><img
                                                     loading="lazy"
                                                     src="./assets/images/social-media-icon/large/facebook.svg"
                                                     alt="facebook icon"
-                                                    class="social-media-network__icon"
+                                                    class="social-media-network__logo"
                                             /></a>
                                         </li>
-                                        <li class="social-media-network__icon-container">
-                                            <a href="https://github.com/TTNguyen2552003">
+                                        <li class="social-media-networks__item">
+                                            <a
+                                                class="social-media-network__link"
+                                                href="https://github.com/TTNguyen2552003"
+                                            >
                                                 <img
                                                     loading="lazy"
                                                     src="./assets/images/social-media-icon/large/instagram.svg"
                                                     alt="instagram icon"
-                                                    class="social-media-network__icon"
+                                                    class="social-media-network__logo"
                                                 />
                                             </a>
                                         </li>
-                                        <li class="social-media-network__icon-container">
-                                            <a href="https://www.linkedin.com/in/ttnguyen2552003/">
+                                        <li class="social-media-networks__item">
+                                            <a
+                                                class="social-media-network__link"
+                                                href="https://www.linkedin.com/in/ttnguyen2552003/"
+                                            >
                                                 <img
                                                     loading="lazy"
                                                     src="./assets/images/social-media-icon/large/linkedin.svg"
                                                     alt="linkedin icon"
-                                                    class="social-media-network__icon"
+                                                    class="social-media-network__logo"
                                                 />
                                             </a>
                                         </li>
