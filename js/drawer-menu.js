@@ -54,11 +54,11 @@ class DrawerMenu {
 
     openDrawerMenu() {
         this.self.classList.add("drawer-menu--shown")
-        SmoothScroll.SCROLL_LIMITS.maxScrollAmount = 0
+        smoothScrollInstance.scrollElements = []
     }
     closeDrawerMenu() {
         this.self.classList.remove("drawer-menu--shown")
-        SmoothScroll.SCROLL_LIMITS.maxScrollAmount = document.querySelector("body").offsetHeight - window.innerHeight
+        smoothScrollInstance.scrollElements = document.querySelectorAll("[smooth-scroll]")
     }
 }
 
