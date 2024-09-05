@@ -79,19 +79,23 @@ class SmoothScroll {
                 element.style.transform = `translateY(${-this.scrollAmount}px)`
             })
         })
+        this.internalAnchors.forEach((anchor) => {
+            anchor.addEventListener("click", (event) => {
+                event.preventDefault()
 
-        if (!this.isTouchDevice) {
-            this.internalAnchors.forEach((anchor) => {
-                anchor.addEventListener("click", (event) => {
-                    event.preventDefault()
+                const targetId = anchor.getAttribute("href").slice(1)
+                const target = document.getElementById(targetId)
 
-                    const targetId = anchor.getAttribute("href").slice(1)
-                    const target = document.getElementById(targetId)
-
+                if (this.isTouchDevice) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: "smooth"
+                    })
+                } else {
                     this.scrollSmoothly(target.offsetTop - this.scrollAmount, this.scrollElements)
-                })
+                }
             })
-        }
+        })
     }
 
     detectScrollAmountPerTime(event) {

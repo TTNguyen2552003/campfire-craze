@@ -32,23 +32,28 @@ class DrawerMenu {
         this.closeButton.addEventListener("click", () => {
             this.closeDrawerMenu()
         })
-        if (!this.isTouchDevice) {
-            this.internalAnchors.forEach((anchor) => {
-                anchor.addEventListener("click", (event) => {
-                    event.preventDefault()
+        this.internalAnchors.forEach((anchor) => {
+            anchor.addEventListener("click", (event) => {
+                event.preventDefault()
 
-                    this.closeDrawerMenu()
+                this.closeDrawerMenu()
 
-                    const targetId = anchor.getAttribute("href").slice(1)
-                    const target = document.getElementById(targetId)
+                const targetId = anchor.getAttribute("href").slice(1)
+                const target = document.getElementById(targetId)
 
-                    smoothScrollInstance.scrollSmoothly(
+                if (this.isTouchDevice) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: "smooth"
+                    })
+                } else {
+                    this.scrollSmoothly(
                         target.offsetTop - smoothScrollInstance.scrollAmount,
                         smoothScrollInstance.scrollElements
                     )
-                })
+                }
             })
-        }
+        })
         this.socialMediaNetworks.forEach((link) => {
             link.addEventListener("click", () => {
                 this.closeDrawerMenu()
