@@ -6,6 +6,7 @@ class DrawerMenu {
         this.closeButton = null
         this.internalAnchors = []
         this.socialMediaNetworks = []
+        this.isTouchDevice = null
 
         this.initialize()
     }
@@ -21,6 +22,7 @@ class DrawerMenu {
         this.closeButton = document.querySelector(".drawer-menu__close-button")
         this.internalAnchors = document.querySelectorAll(".drawer-menu-item__link")
         this.socialMediaNetworks = document.querySelectorAll(".drawer-menu .social-media-network__link")
+        this.isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0
     }
 
     setupEventListener() {
@@ -30,21 +32,23 @@ class DrawerMenu {
         this.closeButton.addEventListener("click", () => {
             this.closeDrawerMenu()
         })
-        this.internalAnchors.forEach((anchor) => {
-            anchor.addEventListener("click", (event) => {
-                event.preventDefault()
+        if (!this.isTouchDevice) {
+            this.internalAnchors.forEach((anchor) => {
+                anchor.addEventListener("click", (event) => {
+                    event.preventDefault()
 
-                this.closeDrawerMenu()
+                    this.closeDrawerMenu()
 
-                const targetId = anchor.getAttribute("href").slice(1)
-                const target = document.getElementById(targetId)
+                    const targetId = anchor.getAttribute("href").slice(1)
+                    const target = document.getElementById(targetId)
 
-                smoothScrollInstance.scrollSmoothly(
-                    target.offsetTop - smoothScrollInstance.scrollAmount,
-                    smoothScrollInstance.scrollElements
-                )
+                    smoothScrollInstance.scrollSmoothly(
+                        target.offsetTop - smoothScrollInstance.scrollAmount,
+                        smoothScrollInstance.scrollElements
+                    )
+                })
             })
-        })
+        }
         this.socialMediaNetworks.forEach((link) => {
             link.addEventListener("click", () => {
                 this.closeDrawerMenu()

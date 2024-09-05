@@ -12,6 +12,8 @@ class SmoothScroll {
         this.scrollElements = []
         this.scrollAmount = 0
         this.internalAnchors = []
+        this.isTouchDevice = null
+
         this.initialize()
     }
 
@@ -29,6 +31,7 @@ class SmoothScroll {
             const targetId = link.getAttribute("href").slice(1)
             return document.getElementById(targetId) !== null && link.className != "drawer-menu-item__link"
         })
+        this.isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0
         SmoothScroll.SCROLL_LIMITS.maxScrollAmount = document.querySelector("body").offsetHeight - window.innerHeight
     }
 
@@ -77,16 +80,18 @@ class SmoothScroll {
             })
         })
 
-        this.internalAnchors.forEach((anchor) => {
-            anchor.addEventListener("click", (event) => {
-                event.preventDefault()
+        if (!this.isTouchDevice) {
+            this.internalAnchors.forEach((anchor) => {
+                anchor.addEventListener("click", (event) => {
+                    event.preventDefault()
 
-                const targetId = anchor.getAttribute("href").slice(1)
-                const target = document.getElementById(targetId)
+                    const targetId = anchor.getAttribute("href").slice(1)
+                    const target = document.getElementById(targetId)
 
-                this.scrollSmoothly(target.offsetTop - this.scrollAmount, this.scrollElements)
+                    this.scrollSmoothly(target.offsetTop - this.scrollAmount, this.scrollElements)
+                })
             })
-        })
+        }
     }
 
     detectScrollAmountPerTime(event) {

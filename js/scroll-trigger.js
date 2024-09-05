@@ -222,12 +222,14 @@ class HeaderScrollTrigger {
         this.hidingHeaderTimeDelayId = null
         this.observer = null
         this.lastScrollAmount = smoothScrollInstance.scrollAmount
+        this.lastScrollY = 0
 
         this.initialize()
     }
 
     initialize() {
         this.setupElements()
+        this.setupEventListeners()
         this.startObserving()
     }
 
@@ -259,6 +261,18 @@ class HeaderScrollTrigger {
         this.hidingHeaderTimeDelayId = setTimeout(() => {
             this.hideHeader()
         }, 1250)
+    }
+
+    setupEventListeners() {
+        // Hide or show header when user use the touch device
+        window.addEventListener("scroll", () => {
+            if (window.scrollY >= this.lastScrollY) {
+                this.hideHeader()
+            } else {
+                this.showHeader()
+            }
+            this.lastScrollY = window.scrollY
+        })
     }
 
     startObserving() {

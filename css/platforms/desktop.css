@@ -89,6 +89,9 @@
         }
 
         .dropdown-menu__content {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
             width: 100%;
             display: inline;
             padding: var(--gap-positive-300) var(--gap-positive-400);
