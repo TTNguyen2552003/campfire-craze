@@ -46,6 +46,9 @@
         }
 
         .date-picker__data-field {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
             box-sizing: border-box;
             width: 100%;
             padding: var(--gap-positive-200) var(--gap-positive-300);
